@@ -1,4 +1,7 @@
-import tilt from 'tilt.js';
+import $ from 'jquery';
+import installTilt from 'tilt.js';
+
+installTilt(window, $);
 
 const initTilt = () => {
   // Projects images
