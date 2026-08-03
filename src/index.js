@@ -1,7 +1,11 @@
+import $ from 'jquery';
+import './vendor';
 import initTilt from './js/tilt';
 import initSr from './js/sr';
 
 import './style/main.scss';
+
+window.$ = window.jQuery = $;
 
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
